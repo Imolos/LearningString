@@ -1,4 +1,3 @@
-import javax.management.monitor.StringMonitor;
 import javax.sound.midi.Soundbank;
 
 public class LearnStrings {
@@ -11,6 +10,44 @@ public class LearnStrings {
     }*/
 
     public static void main(String[] args) {
+
+        // Lecture 37 Searching within a String - indexOf()
+        String myText = "ABCDEFGABCDEFG";
+        System.out.println(myText.indexOf(65)); //or "A" case sensitive
+        System.out.println(myText.lastIndexOf(65)); //or "A"
+        System.out.println(myText.lastIndexOf(65)); //or "A"
+
+        // Lecture 36 Getting part of the String
+        /* String myText = "apple";
+        String firstPart = myText.substring(0, 1);
+        String secondPart = myText.substring(1);
+        String capitalFirstLetter = firstPart.toUpperCase();
+        String myNewText = capitalFirstLetter.concat(secondPart);
+        int capacity = capitalFirstLetter.length() + secondPart.length();
+        String firstLetterCapital = new StringBuilder(capacity)
+                .append(capitalFirstLetter)
+                .append(secondPart)
+                .toString();
+
+        System.out.println(myText);
+        System.out.println(myNewText);
+        System.out.println(firstLetterCapital);*/
+        // Lecture 35 Determining the Length of a String - length()
+        /* Part One
+        String myText = "for score and seven years ago";
+        System.out.println(myText.length());
+        char[] chars = myText.toCharArray();
+        int index = 2;
+        if (index < myText.length()) {
+            System.out.println(chars[index]);
+        }*
+       /* Part two
+       String myText = "for";
+        String secondText = "score";
+        StringBuilder builder = new StringBuilder(myText.length() + secondText.length())
+                .append(myText)
+                .append(secondText);
+        System.out.println(builder.toString());*/
 
         //Lecture 34 String Concatenation - concat
         /* String text1 = "this is my text1";
@@ -32,7 +69,7 @@ public class LearnStrings {
 
         // Lecture 33 Determining if text is contained in String
         /*String myText = "Four score and seven years ago";
-        System.out.println(myText.contains("seven"))*/;
+        System.out.println(myText.contains("seven"))*/
 
         // lecture 32 Comparing String to alphabetic order part 1
         /* String firstWord = "Apple";
