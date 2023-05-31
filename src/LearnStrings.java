@@ -10,8 +10,22 @@ public class LearnStrings {
     }*/
 
     public static void main(String[] args) {
+        //Lecture 40 equals
+        String firstText = "Apple";
+        StringBuffer secondText = new StringBuffer("Apple");
 
-        String text = """
+        System.out.println(firstText.contentEquals(secondText));
+        System.out.println(firstText.equals(secondText));//must be String class
+
+
+    }
+    //Lecture 39 start and ens with
+    /* String filename = "   file001.txt";
+        System.out.println(filename.endsWith(".txt"));
+        System.out.println(filename.strip().startsWith("file"));*/
+
+    //Lecture 38 Split
+        /*String text = """
                 Orelia,Nore,2007-08-02,Serekunda,Grapefruit,NF
                 Marguerite,Teddman,2012-03-21,Lilongwe,Pear,BW
                 Roberta,Dom,2007-01-22,Salt Lake City,Grapefruit,ES
@@ -24,10 +38,7 @@ public class LearnStrings {
         System.out.println(people[2]);
         String[] orleia = people[2].split(",");
         System.out.println(orleia.length);
-        System.out.println(orleia[3]);
-
-
-    }
+        System.out.println(orleia[3]);*/
     //For lecture 37
     /*public static String parseAreaCode(String phoneNumber) {
         int openParens = phoneNumber.indexOf("(");
