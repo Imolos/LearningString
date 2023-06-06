@@ -3,14 +3,16 @@ import java.util.regex.Pattern;
 
 public class Regex {
     public static void main(String[] args) {
-        String texts = "Dark, bark, Lark, stark";
+        String exercisesText = "Dark, bark, Lark, stark";
+        String exercisesTexttoo = "Abracadabra";
+        String exercisesTexttree = "Agracadagra";
 
         String regex = "((\\w+,\\s){3}(\\w+))";
+        String regexWithoutCapture = "(?:(\\w+)\\s)"; //?: is voiding capture group
 
-        Pattern pat = Pattern.compile(regex);
-        Matcher mat = pat.matcher(texts);
-
-        System.out.println(mat.matches());
+        System.out.println(exercisesText.matches(regex));
+        System.out.println(exercisesTexttoo.matches("\\w(\\w{3})\\w{4}(\\w{3})"));
+        System.out.println(exercisesTexttree.matches("\\w(\\w{3})\\w{4}(\\w{3})"));
 
 
     }
